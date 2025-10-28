@@ -1,0 +1,86 @@
+1. What type would you choose for the following “numbers”?
+A person’s telephone number
+	-string
+A person’s height
+	-Float
+A person’s age
+	-ushort
+A person’s gender (Male, Female, Prefer Not To Answer)
+	-Enum
+A person’s salary
+	-decimal
+A book’s ISBN
+	-string
+A book’s price
+	-decimal
+A book’s shipping weight
+	-decimal
+A country’s population
+	-uint
+The number of stars in the universe
+	-ulong
+The number of employees in each of the small or medium businesses in the
+United Kingdom (up to about 50,000 employees per business)
+	-uint
+
+2. What are the difference between value type and reference type variables? What is
+boxing and unboxing?
+Value type stores the actual value and is stored in the stack. Reference type stores the address to the value and is stored in the heap. Boxing is converting value into reference (object) type and unboxing is converting reference (object) into value types.
+
+3. What is meant by the terms managed resource and unmanaged resource in .NET
+Managed resources are resources that are managed by the garbage collector and the Common Language Runtime (CLR). Unmanaged resources are not tracked and needs to be manually disposed of using the Dispose() function.
+
+4. Whats the purpose of Garbage Collector in .NET?
+The garbage collector manages memory in the heap that tracks and automatically dispose unused objects to manage space.
+
+1. What happens when you divide an int variable by 0?
+It would throw out an error
+
+2. What happens when you divide a double variable by 0?
+It would become infinity
+
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+It would throw out an error saying integral number is to large
+
+4. What is the difference between x = y++; and x = ++y;?
+y++ would assign y to x then increase y by 1 while ++y would increase y by 1 then assign to x
+
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+Break stop the loop entirely, continue skip the current iteration of the loop and go to the next one, and return stop the loop and return the value 
+
+6. What are the three parts of a for statement and which of them are required?
+Initialize, condition, iterate
+
+7. What is the difference between the = and == operators?
+= is assignment operator and == is a comparison operator
+
+8. Does the following statement compile? for ( ; true; ) ;
+It would but it would be an infinite loop and never ends
+
+9. What does the underscore _ represent in a switch expression?
+The _ represents "else" or any other variables that are not stated in the switch statement
+
+10. What interface must an object implement to be enumerated over by using the foreach
+statement?
+IEnumerable
+
+1. When to use String vs. StringBuilder in C# ?
+Use StringBuilder when you want to mutate a string, otherwise use String
+
+2. What is the base class for all arrays in C#?
+System.Array
+
+3. How do you sort an array in C#?
+.Sort()
+
+4. What property of an array object can be used to get the total number of elements in
+an array?
+.Length
+
+5. Can you store multiple data types in System.Array?
+Yes, since it's a collection of object types
+
+6. What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
+CopyTo converts an existing array's data to another. Clone create a copy of the original array 
